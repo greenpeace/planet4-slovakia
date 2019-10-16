@@ -3,9 +3,10 @@
 	"description": "Greenpeace P4 slovakia",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-child-theme" : "0.2.11"
+		"greenpeace/planet4-child-theme" : "0.*"
 	},
 	"scripts": {
-		"site:custom" : []
+		"core:language": "wp language core install sk_SK;wp language core activate sk_SK",
+		"site:custom" : ["@core:language"]
 	}
 }
