@@ -494,7 +494,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - master-dont-run
     jobs:
       - notify-sync-auto:
           context: org-global
@@ -506,7 +506,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - master-dont-run
     jobs:
       - create-sync-sql:
           context: org-global
