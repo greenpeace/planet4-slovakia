@@ -7,7 +7,7 @@
 		"greenpeace/planet4-plugin-migrated-urls": "0.0.1",
 		"wpackagist-plugin/wp-stateless": "2.1.7",
 		"greenpeace/planet4-master-theme" : "dev-release/v1.65",
-		"greenpeace/planet4-plugin-gutenberg-blocks": "dev-develop",
+		"greenpeace/planet4-plugin-gutenberg-blocks": "0.1",
 		"greenpeace/planet4-plugin-gutenberg-engagingnetworks": "dev-master"
 	},
 	"scripts": {
