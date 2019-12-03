@@ -156,7 +156,9 @@ job_definitions:
       - attach_workspace:
           at: /tmp/workspace
       - run: activate-gcloud-account.sh
-      - run: BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num) make -j2 deploy
+      - run:
+          command: BUILD_TAG=build-$(cat /tmp/workspace/var/circle-build-num) make -j2 deploy
+          no_output_timeout: 30m
 
   backstop_history_steps: &backstop_history_steps
     docker:
